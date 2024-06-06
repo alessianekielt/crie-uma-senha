@@ -29,7 +29,6 @@ const letrasMaiusculas = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const letrasMinusculas = 'abcdefghijklmnopqrstuvxywz';
 const numeros = '0123456789';
 const simbolos = '!@%*?';
-const valorEntropia = document.querySelector('entropia');
 function geraSenha(){
     let alfabeto = '';
     if (checkbox[0].checked){
@@ -64,4 +63,5 @@ function classificaSenha(tamanhoAlfabeto){
         forcaSenha.classList.add('fraca');
     }
 }
+const valorEntropia = document.querySelector('.entropia');
 valorEntropia.textContent = "Um computador pode levar até " + Math.floor(2**entropia/(100e6*60*60*24)) + " dias para descobrir essa senha.";
